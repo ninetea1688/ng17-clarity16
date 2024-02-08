@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ClarityIcons, userIcon,boltIcon, sadFaceIcon,bugIcon,shieldIcon,certificateIcon } from '@cds/core/icon';
+ClarityIcons.addIcons(userIcon,boltIcon,sadFaceIcon, bugIcon, shieldIcon,certificateIcon);
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng-clarity';
+  collapsed: boolean = true;
 }
